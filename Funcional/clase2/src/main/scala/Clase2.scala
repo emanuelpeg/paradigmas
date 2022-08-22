@@ -52,7 +52,7 @@ object Clase2 {
   def filtrar(xs: List[Int], p: Int => Boolean): List[Int] = ???
 
   /**
-   * Filtra los elementos pares usando filtrar
+   * Filtra los elementos pares usando filtrar utilizando la función Filtrar
    */
   def filtrarPares(xs: List[Int]): List[Int] = ???
 
@@ -68,17 +68,17 @@ object Clase2 {
 
 
   /**
-   * Acumula todos los elementos de una lista usando acumula
+   * Acumula todos los elementos de una lista usando acumular
    */
   def acumularUnidad(lista: List[Int]): Int = ???
 
   /**
-   * Acumula  el dobles de los elementos de una lista usando acumula
+   * Acumula  el dobles de los elementos de una lista usando acumular
    */
   def acumularDoble(lista: List[Int]): Int = ???
 
   /**
-   * Acumula el cuadrado de los elementos de una lista usando acumula
+   * Acumula el cuadrado de los elementos de una lista usando acumular
    */
   def acumularCuadrado(lista: List[Int]): Int = ???
 
@@ -102,5 +102,11 @@ object Clase2 {
    */
   def unirOfSet(lista: List[Int], otraLista: List[Int]): List[Int] = ???
 
+  /*******************************
+  * Opcional
+   * Dada una lista de enteros retorna una lista con todas las posibles subconjuntos
+   * Por ejemplo : (1,2,3) -> ((),(1),(2),(3),(1,2),(1,3), (1,2,3), (2,3))
+  ********************************/
+  def subSets(lista: List[Int]): List[List[Int]] = ???
 
 }

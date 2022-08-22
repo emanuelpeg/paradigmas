@@ -12,7 +12,8 @@ object Clase1 {
    *
    * Defina una función que calcule la enésima potencia positiva de un número
    */
-  def potencia(n: Long, v: Int): Long = ???
+  def potencia(n: Long, v: Int): Long = if (v == 0) 1
+  else potencia(n, v-1) * n
 
   /**
    * Ejercicio 0
@@ -21,12 +22,17 @@ object Clase1 {
    */
   def factorial(n: Long): Long = ???
 
-  /**
-   * Ejercicio 1
-   *
-   * Realice una función que calcule el enesimo numero de fibonacci
-   */
-  def fibonacci(n: Int): Long = ???
+
+  def fibonacci(n: Int): Long = {
+
+    def faux(n: Int, fa: Long, faa: Long) : Long =
+      if (n == 2) fa + faa
+      else faux(n - 1, fa + faa, fa)
+
+    if (n == 0) 0
+    else if (n == 1) 1
+    else faux(n, 1, 0)
+  }
 
 
   /**

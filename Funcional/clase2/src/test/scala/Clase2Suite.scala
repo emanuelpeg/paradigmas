@@ -125,4 +125,10 @@ class Clase2Suite extends munit.FunSuite  {
   test("existe 1 en 1,2,3,4,5") {
     assert(existe(List(1, 2, 3, 4, 5), 1))
   }
+
+  test("subSets (1,2) debe ser ((),(1,2),(1),(2))") {
+    assert(Set(subSets(List(1, 2))) == Set(Nil,List(1), List(2), List(1,2)))
+  }
+
+
 }

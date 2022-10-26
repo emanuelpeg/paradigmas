@@ -4,7 +4,9 @@ import scala.collection.mutable.ListBuffer
 
 class ArrayJson extends ElementJson {
 
-  def add(elementJson: ElementJson) = ???
+  val list = ListBuffer[ElementJson]()
 
-  override def toString: String = ???
+  def add(elementJson: ElementJson) = list.addOne(elementJson)
+
+  override def toString: String = s"[${list.mkString(", ")}]"
 }
